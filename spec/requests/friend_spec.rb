@@ -15,11 +15,4 @@ RSpec.describe "Friends", type: :request do
     end
   end
 
-  context 'should give correct result' do
-    it 'with 1000' do
-      get '/friend/view?v1=1000'
-      expect(assigns[:result]).to eq [[220, 284]]
-    end
-  end
-
 end
